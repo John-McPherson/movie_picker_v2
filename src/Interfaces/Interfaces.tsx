@@ -8,3 +8,20 @@ export type Genre = {
   id: number;
   name: string;
 };
+
+export interface Data {
+  title: string;
+  poster_path: string;
+  runtime: number;
+  genres: {
+    id: number;
+    name: string;
+  }[];
+  overview: string;
+  id: number;
+  streaming_services: {
+    flatrate?: StreamingService[];
+    rent?: StreamingService[];
+    buy?: StreamingService[];
+  };
+}

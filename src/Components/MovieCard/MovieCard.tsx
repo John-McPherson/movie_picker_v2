@@ -9,9 +9,9 @@ interface Props {
   runtime: number;
   genres: Genre[];
   streaming_services: {
-    flatrate: StreamingService[];
-    rent: StreamingService[];
-    buy: StreamingService[];
+    flatrate?: StreamingService[];
+    rent?: StreamingService[];
+    buy?: StreamingService[];
   };
   handleClick: () => void;
 }
